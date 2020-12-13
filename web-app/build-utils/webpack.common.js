@@ -19,15 +19,6 @@ const config = {
       }
     ]
   },
-  externals: {
-    'config': JSON.stringify({
-      server_url: 'https://example.com/api/',
-      theme_color: {
-        primary: '#007bff',
-        secondary: 'black'
-      }
-    })
-  },
   optimization: {
     splitChunks: {
       cacheGroups: {
