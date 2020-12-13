@@ -1,0 +1,7 @@
+{
+    "server_url": "https://example.com/api/",
+    "theme_colors": {
+        "primary": "#007bff",
+        "secondary": "black"
+    }
+}
