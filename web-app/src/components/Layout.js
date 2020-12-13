@@ -2,13 +2,9 @@ import React from 'react'
 import Clock from 'react-live-clock'
 import { Header, Container, Divider, Icon, Grid } from 'semantic-ui-react'
 
-
 import { pullRight, h1 } from './layout.css'
 
-var env = require('../env')
-
 const Layout = ({ children }) => {
-  console.log(env)
   return (
     <Container>
       <Header as="h1" className={h1}>
@@ -27,7 +23,7 @@ const Layout = ({ children }) => {
       </Header>
       {children}
       <Divider />
-      <p className={pullRight} style={{color: env.COLOR}}>
+      <p className={pullRight}>
         Made with <Icon name="heart" color="red" /> by Chris Mc
       </p>
     </Container>
