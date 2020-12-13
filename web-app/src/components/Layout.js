@@ -1,12 +1,14 @@
 import React from 'react'
 import Clock from 'react-live-clock'
 import { Header, Container, Divider, Icon, Grid } from 'semantic-ui-react'
-import * as env from 'process';
+
 
 import { pullRight, h1 } from './layout.css'
 
+var env = require('../env')
+
 const Layout = ({ children }) => {
-  console.log(env.COLOR)
+  console.log(env)
   return (
     <Container>
       <Header as="h1" className={h1}>
