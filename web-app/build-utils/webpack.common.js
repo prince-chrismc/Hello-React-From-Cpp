@@ -1,7 +1,6 @@
 const commonPaths = require('./common-paths');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
 
 const config = {
   entry: {
@@ -42,16 +41,8 @@ const config = {
     new HtmlWebpackPlugin({
       template: `public/index.html`,
       favicon: `public/favicon.ico`
-    }),
-    new CopyPlugin({
-      patterns: [
-        { from: "config.json" }
-      ],
-    }),
-  ],
-  externals: {
-    './config.json': '/config.json'
-  }
+    })
+  ]
 };
 
 module.exports = config;

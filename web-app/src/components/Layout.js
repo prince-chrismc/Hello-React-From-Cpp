@@ -3,7 +3,7 @@ import Clock from 'react-live-clock'
 import { Header, Container, Divider, Icon, Grid } from 'semantic-ui-react'
 
 import { pullRight, h1 } from './layout.css'
-import { theme_colors } from './config.json'
+import { theme_colors } from '../../config.json'
 
 const Layout = ({ children }) => {
   return (
